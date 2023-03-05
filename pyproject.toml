@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "d206-data-cleaning"
+version = "0.1.0"
+description = "WGU D206 Data Cleaning"
+authors = ["Isaac Winters <IsaacMcPheeWinters@gmail.com>"]
+readme = "README.md"
+packages = [{include = "d206_data_cleaning"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.5.3"
+ipython = "^8.11.0"
+numpy = "^1.24.2"
+scikit-learn = "^1.2.1"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^3.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
